@@ -1,0 +1,10 @@
+c:\users\mile\documents\visual studio 2015\Projects\Meilko\Meilko\bin\Debug\Meilko.exe.config
+c:\users\mile\documents\visual studio 2015\Projects\Meilko\Meilko\obj\Debug\Meilko.Properties.Resources.resources
+c:\users\mile\documents\visual studio 2015\Projects\Meilko\Meilko\obj\Debug\Meilko.csproj.GenerateResource.Cache
+c:\users\mile\documents\visual studio 2015\Projects\Meilko\Meilko\bin\Debug\Meilko.exe
+c:\users\mile\documents\visual studio 2015\Projects\Meilko\Meilko\bin\Debug\Meilko.pdb
+c:\users\mile\documents\visual studio 2015\Projects\Meilko\Meilko\obj\Debug\Meilko.exe
+c:\users\mile\documents\visual studio 2015\Projects\Meilko\Meilko\obj\Debug\Meilko.pdb
+c:\users\mile\documents\visual studio 2015\Projects\Meilko\Meilko\obj\Debug\Meilko.Meilko.resources
+C:\Users\Mile\Documents\Visual Studio 2015\Projects\Meilko\Meilko\obj\Debug\Meilko.csprojResolveAssemblyReference.cache
+C:\Users\Mile\Documents\Visual Studio 2015\Projects\Meilko\Meilko\obj\Debug\Meilko.ParentControl.resources
