@@ -127,7 +127,7 @@ namespace Meilko
             // 
             // pbPoraka
             // 
-            this.pbPoraka.Location = new System.Drawing.Point(292, 129);
+            this.pbPoraka.Location = new System.Drawing.Point(263, 77);
             this.pbPoraka.Name = "pbPoraka";
             this.pbPoraka.Size = new System.Drawing.Size(380, 326);
             this.pbPoraka.TabIndex = 6;
@@ -136,10 +136,10 @@ namespace Meilko
             // 
             // pbNovaPoraka
             // 
-            this.pbNovaPoraka.Image = ((System.Drawing.Image)(resources.GetObject("pbNovaPoraka.Image")));
-            this.pbNovaPoraka.Location = new System.Drawing.Point(472, 12);
+            this.pbNovaPoraka.Image = global::Meilko.Properties.Resources.message2;
+            this.pbNovaPoraka.Location = new System.Drawing.Point(34, 337);
             this.pbNovaPoraka.Name = "pbNovaPoraka";
-            this.pbNovaPoraka.Size = new System.Drawing.Size(200, 100);
+            this.pbNovaPoraka.Size = new System.Drawing.Size(154, 160);
             this.pbNovaPoraka.TabIndex = 12;
             this.pbNovaPoraka.TabStop = false;
             this.pbNovaPoraka.Visible = false;
@@ -149,11 +149,12 @@ namespace Meilko
             // 
             this.pnlCrtez.BackColor = System.Drawing.Color.Transparent;
             this.pnlCrtez.Controls.Add(this.pbMail);
-            this.pnlCrtez.Location = new System.Drawing.Point(102, 114);
+            this.pnlCrtez.Location = new System.Drawing.Point(110, 113);
             this.pnlCrtez.Name = "pnlCrtez";
-            this.pnlCrtez.Size = new System.Drawing.Size(494, 331);
+            this.pnlCrtez.Size = new System.Drawing.Size(475, 330);
             this.pnlCrtez.TabIndex = 19;
             this.pnlCrtez.Visible = false;
+            this.pnlCrtez.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlCrtez_Paint);
             this.pnlCrtez.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlCrtez_MouseDown);
             this.pnlCrtez.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlCrtez_MouseMove);
             this.pnlCrtez.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlCrtez_MouseUp);
@@ -161,7 +162,7 @@ namespace Meilko
             // pbMail
             // 
             this.pbMail.Image = ((System.Drawing.Image)(resources.GetObject("pbMail.Image")));
-            this.pbMail.Location = new System.Drawing.Point(67, 3);
+            this.pbMail.Location = new System.Drawing.Point(51, 0);
             this.pbMail.Name = "pbMail";
             this.pbMail.Size = new System.Drawing.Size(370, 328);
             this.pbMail.TabIndex = 44;
@@ -367,7 +368,7 @@ namespace Meilko
             // pbIsprati
             // 
             this.pbIsprati.Image = ((System.Drawing.Image)(resources.GetObject("pbIsprati.Image")));
-            this.pbIsprati.Location = new System.Drawing.Point(602, 439);
+            this.pbIsprati.Location = new System.Drawing.Point(318, 449);
             this.pbIsprati.Name = "pbIsprati";
             this.pbIsprati.Size = new System.Drawing.Size(70, 77);
             this.pbIsprati.TabIndex = 43;
@@ -416,6 +417,7 @@ namespace Meilko
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(684, 518);
+            this.Controls.Add(this.pbNovaPoraka);
             this.Controls.Add(this.pbHome);
             this.Controls.Add(this.pbBack);
             this.Controls.Add(this.pbPosta);
@@ -440,7 +442,6 @@ namespace Meilko
             this.Controls.Add(this.pbBe);
             this.Controls.Add(this.pbY);
             this.Controls.Add(this.pbG);
-            this.Controls.Add(this.pbNovaPoraka);
             this.Controls.Add(this.pbInbox2);
             this.Controls.Add(this.pbInbox3);
             this.Controls.Add(this.pbInbox1);

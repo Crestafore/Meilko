@@ -171,9 +171,6 @@
     <None Include="Resources\background_empty.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\btnIscisti.png" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Resources\br.png" />
   </ItemGroup>
   <ItemGroup>
@@ -202,12 +199,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\y.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnMinus.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\btnPlus.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\text1_added.png" />
@@ -286,6 +277,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\btn_home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnIscisti.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnMinus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnPlus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\message2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

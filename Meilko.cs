@@ -307,22 +307,55 @@ namespace Meilko
 
         private void pbContact1_Click(object sender, EventArgs e)
         {
-            pbContact1.Image = Resources.text1_added;
-            added[0] = true;
+            if (state == 2)
+            {
+                if (added[0])
+                {
+                    pbContact1.Image = Resources.text1_not_added;
+                    added[0] = false;
+                }
+                else
+                {
+                    pbContact1.Image = Resources.text1_added;
+                    added[0] = true;
+                }
+            }
 
         }
 
         private void pbContact2_Click(object sender, EventArgs e)
         {
-            pbContact2.Image = Resources.text2_added;
-            added[1] = true;
+            if (state == 2)
+            {
+                if (added[1])
+                {
+                    pbContact2.Image = Resources.text2_not_added;
+                    added[1] = false;
+                }
+                else
+                {
+                    pbContact2.Image = Resources.text2_added;
+                    added[1] = true;
+                }
+            }
 
         }
 
         private void pbContact3_Click(object sender, EventArgs e)
         {
-            pbContact3.Image = Resources.text3_added;
-            added[2] = true;
+            if(state == 2)
+            {
+                if (added[2])
+                {
+                    pbContact3.Image = Resources.text3_not_added;
+                    added[2] = false;
+                }
+                else
+                {
+                    pbContact3.Image = Resources.text3_added;
+                    added[2] = true;
+                }
+            }
 
         }
 
@@ -427,6 +460,11 @@ namespace Meilko
             hideMailCreationDetails();
             prepareInboxScreen();
             pbPoraka.Visible = true;
+        }
+
+        private void pnlCrtez_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
         private void showState3Controls()
