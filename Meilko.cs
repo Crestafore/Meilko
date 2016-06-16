@@ -127,7 +127,7 @@ namespace Meilko
 
         private void pnlCrtez_MouseMove(object sender, MouseEventArgs e)
         {
-            if (paint)
+            if (paint && state == 2)
             {
                 Graphics g = pnlCrtez.CreateGraphics();
                 g.FillEllipse(brush, e.X, e.Y, brushSize.X, brushSize.Y);
@@ -460,11 +460,6 @@ namespace Meilko
             hideMailCreationDetails();
             prepareInboxScreen();
             pbPoraka.Visible = true;
-        }
-
-        private void pnlCrtez_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void showState3Controls()

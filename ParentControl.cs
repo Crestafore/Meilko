@@ -53,25 +53,24 @@ namespace Meilko
             btnNajava.Font = new Font(fonts.Families[0], 18);
             btnDodaj.Font = new Font(fonts.Families[0], 14);
             btnZacuvaj.Font = new Font(fonts.Families[0], 14);
+            btnOtkazi.Font = new Font(fonts.Families[0], 14);
 
             lblContacts.Font = new Font(fonts.Families[0], 16);
             lblGodini.Font = new Font(fonts.Families[0], 16);
             lblIme.Font = new Font(fonts.Families[0], 16);
             lblInfo.Font = new Font(fonts.Families[0], 16);
-            lblKontaktGodini.Font = new Font(fonts.Families[0], 16);
             lblKontaktIme.Font = new Font(fonts.Families[0], 16);
             lblKontaktPosta.Font = new Font(fonts.Families[0], 16);
             lblLozinka.Font = new Font(fonts.Families[0], 16);
             lblMail.Font = new Font(fonts.Families[0], 16);
             lblPanel.Font = new Font(fonts.Families[0], 36);
-            lblPass.Font = new Font(fonts.Families[0], 16);
-            lblPosta.Font = new Font(fonts.Families[0], 16);
+            lblPass.Font = new Font(fonts.Families[0], 20);
+            lblPosta.Font = new Font(fonts.Families[0], 20);
 
             tbInfoGodini.Font = new Font(fonts.Families[0], 16);
             tbInfoIme.Font = new Font(fonts.Families[0], 16);
             tbInfoLozinka.Font = new Font(fonts.Families[0], 16);
             tbInfoPosta.Font = new Font(fonts.Families[0], 16);
-            tbKontaktGodini.Font = new Font(fonts.Families[0], 16);
             tbKontaktIme.Font = new Font(fonts.Families[0], 16);
             tbKontaktPosta.Font = new Font(fonts.Families[0], 16);
             tbLozinka.Font = new Font(fonts.Families[0], 20);
@@ -113,28 +112,26 @@ namespace Meilko
 
         private void showContactControls()
         {
-            lblKontaktGodini.Visible = true;
             lblKontaktIme.Visible = true;
             lblKontaktPosta.Visible = true;
-
-            tbKontaktGodini.Visible = true;
+            
             tbKontaktIme.Visible = true;
             tbKontaktPosta.Visible = true;
 
             btnDodaj.Visible = true;
+            btnOtkazi.Visible = true;
         }
 
         private void hideContactControls()
         {
-            lblKontaktGodini.Visible = false;
             lblKontaktIme.Visible = false;
             lblKontaktPosta.Visible = false;
-
-            tbKontaktGodini.Visible = false;
+            
             tbKontaktIme.Visible = false;
             tbKontaktPosta.Visible = false;
 
             btnDodaj.Visible = false;
+            btnOtkazi.Visible = false;
         }
 
         private void btnDodaj_Click(object sender, EventArgs e)
@@ -187,6 +184,22 @@ namespace Meilko
             pnlInfo.Visible = true;
             pnlKontakti.Visible = true;
             BackgroundImage = Resources.background_empty;
+        }
+
+        private void btnProfil_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog dialog = new OpenFileDialog();
+            dialog.Title = "Избери профилна слика";
+            dialog.Filter = "Image files (*.jpg, *.jpeg, *.gif, *.png) | *.jpg; *.jpeg; *.gif; *.png";
+            dialog.FilterIndex = 2;
+            dialog.RestoreDirectory = true;
+            dialog.ShowDialog();
+        }
+
+        private void btnOtkazi_Click(object sender, EventArgs e)
+        {
+            hideContactControls();
+            showContacts();
         }
     }
 }

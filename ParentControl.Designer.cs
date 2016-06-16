@@ -44,7 +44,6 @@
             this.pnlKontakti = new System.Windows.Forms.Panel();
             this.btnDodaj = new System.Windows.Forms.Button();
             this.pbDodaj = new System.Windows.Forms.PictureBox();
-            this.lblKontaktGodini = new System.Windows.Forms.Label();
             this.pbKontakt3 = new System.Windows.Forms.PictureBox();
             this.lblKontaktIme = new System.Windows.Forms.Label();
             this.pbDelete1 = new System.Windows.Forms.PictureBox();
@@ -54,7 +53,6 @@
             this.pbDelete2 = new System.Windows.Forms.PictureBox();
             this.pbKontakt1 = new System.Windows.Forms.PictureBox();
             this.tbKontaktIme = new System.Windows.Forms.TextBox();
-            this.tbKontaktGodini = new System.Windows.Forms.TextBox();
             this.pbDelete3 = new System.Windows.Forms.PictureBox();
             this.lblInfo = new System.Windows.Forms.Label();
             this.lblPass = new System.Windows.Forms.Label();
@@ -62,6 +60,8 @@
             this.tbPosta = new System.Windows.Forms.TextBox();
             this.tbLozinka = new System.Windows.Forms.TextBox();
             this.btnNajava = new System.Windows.Forms.Button();
+            this.btnProfil = new System.Windows.Forms.Button();
+            this.btnOtkazi = new System.Windows.Forms.Button();
             this.pnlInfo.SuspendLayout();
             this.pnlKontakti.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbDodaj)).BeginInit();
@@ -79,7 +79,7 @@
             this.lblPanel.Font = new System.Drawing.Font("Aero Matics", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPanel.Location = new System.Drawing.Point(175, 9);
             this.lblPanel.Name = "lblPanel";
-            this.lblPanel.Size = new System.Drawing.Size(537, 56);
+            this.lblPanel.Size = new System.Drawing.Size(399, 56);
             this.lblPanel.TabIndex = 0;
             this.lblPanel.Text = "РОДИТЕЛСКИ ПАНЕЛ";
             this.lblPanel.Visible = false;
@@ -124,6 +124,7 @@
             // pnlInfo
             // 
             this.pnlInfo.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlInfo.Controls.Add(this.btnProfil);
             this.pnlInfo.Controls.Add(this.btnZacuvaj);
             this.pnlInfo.Controls.Add(this.lblGodini);
             this.pnlInfo.Controls.Add(this.lblIme);
@@ -143,7 +144,7 @@
             // 
             this.btnZacuvaj.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnZacuvaj.Font = new System.Drawing.Font("Aero Matics", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnZacuvaj.Location = new System.Drawing.Point(100, 264);
+            this.btnZacuvaj.Location = new System.Drawing.Point(17, 261);
             this.btnZacuvaj.Name = "btnZacuvaj";
             this.btnZacuvaj.Size = new System.Drawing.Size(108, 32);
             this.btnZacuvaj.TabIndex = 10;
@@ -157,7 +158,7 @@
             this.lblGodini.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.lblGodini.Location = new System.Drawing.Point(15, 198);
             this.lblGodini.Name = "lblGodini";
-            this.lblGodini.Size = new System.Drawing.Size(86, 24);
+            this.lblGodini.Size = new System.Drawing.Size(72, 24);
             this.lblGodini.TabIndex = 8;
             this.lblGodini.Text = "Години";
             // 
@@ -168,7 +169,7 @@
             this.lblIme.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.lblIme.Location = new System.Drawing.Point(15, 136);
             this.lblIme.Name = "lblIme";
-            this.lblIme.Size = new System.Drawing.Size(51, 24);
+            this.lblIme.Size = new System.Drawing.Size(45, 24);
             this.lblIme.TabIndex = 7;
             this.lblIme.Text = "Име";
             // 
@@ -179,7 +180,7 @@
             this.lblLozinka.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.lblLozinka.Location = new System.Drawing.Point(14, 74);
             this.lblLozinka.Name = "lblLozinka";
-            this.lblLozinka.Size = new System.Drawing.Size(97, 24);
+            this.lblLozinka.Size = new System.Drawing.Size(80, 24);
             this.lblLozinka.TabIndex = 6;
             this.lblLozinka.Text = "Лозинка";
             // 
@@ -190,7 +191,7 @@
             this.lblMail.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.lblMail.Location = new System.Drawing.Point(15, 12);
             this.lblMail.Name = "lblMail";
-            this.lblMail.Size = new System.Drawing.Size(93, 24);
+            this.lblMail.Size = new System.Drawing.Size(82, 24);
             this.lblMail.TabIndex = 5;
             this.lblMail.Text = "е-пошта";
             // 
@@ -202,7 +203,7 @@
             this.lblContacts.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.lblContacts.Location = new System.Drawing.Point(419, 80);
             this.lblContacts.Name = "lblContacts";
-            this.lblContacts.Size = new System.Drawing.Size(216, 24);
+            this.lblContacts.Size = new System.Drawing.Size(187, 24);
             this.lblContacts.TabIndex = 9;
             this.lblContacts.Text = "Менаџирај контакти";
             this.lblContacts.Visible = false;
@@ -210,9 +211,9 @@
             // pnlKontakti
             // 
             this.pnlKontakti.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.pnlKontakti.Controls.Add(this.btnOtkazi);
             this.pnlKontakti.Controls.Add(this.btnDodaj);
             this.pnlKontakti.Controls.Add(this.pbDodaj);
-            this.pnlKontakti.Controls.Add(this.lblKontaktGodini);
             this.pnlKontakti.Controls.Add(this.pbKontakt3);
             this.pnlKontakti.Controls.Add(this.lblKontaktIme);
             this.pnlKontakti.Controls.Add(this.pbDelete1);
@@ -222,7 +223,6 @@
             this.pnlKontakti.Controls.Add(this.pbDelete2);
             this.pnlKontakti.Controls.Add(this.pbKontakt1);
             this.pnlKontakti.Controls.Add(this.tbKontaktIme);
-            this.pnlKontakti.Controls.Add(this.tbKontaktGodini);
             this.pnlKontakti.Controls.Add(this.pbDelete3);
             this.pnlKontakti.Location = new System.Drawing.Point(367, 108);
             this.pnlKontakti.Name = "pnlKontakti";
@@ -233,7 +233,7 @@
             // btnDodaj
             // 
             this.btnDodaj.Font = new System.Drawing.Font("Aero Matics", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDodaj.Location = new System.Drawing.Point(95, 199);
+            this.btnDodaj.Location = new System.Drawing.Point(18, 142);
             this.btnDodaj.Name = "btnDodaj";
             this.btnDodaj.Size = new System.Drawing.Size(118, 32);
             this.btnDodaj.TabIndex = 18;
@@ -252,18 +252,6 @@
             this.pbDodaj.TabStop = false;
             this.pbDodaj.Click += new System.EventHandler(this.pbDodaj_Click);
             // 
-            // lblKontaktGodini
-            // 
-            this.lblKontaktGodini.AutoSize = true;
-            this.lblKontaktGodini.Font = new System.Drawing.Font("Aero Matics", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKontaktGodini.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.lblKontaktGodini.Location = new System.Drawing.Point(15, 136);
-            this.lblKontaktGodini.Name = "lblKontaktGodini";
-            this.lblKontaktGodini.Size = new System.Drawing.Size(86, 24);
-            this.lblKontaktGodini.TabIndex = 17;
-            this.lblKontaktGodini.Text = "Години";
-            this.lblKontaktGodini.Visible = false;
-            // 
             // pbKontakt3
             // 
             this.pbKontakt3.Image = global::Meilko.Properties.Resources.text3_added;
@@ -281,7 +269,7 @@
             this.lblKontaktIme.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.lblKontaktIme.Location = new System.Drawing.Point(14, 74);
             this.lblKontaktIme.Name = "lblKontaktIme";
-            this.lblKontaktIme.Size = new System.Drawing.Size(51, 24);
+            this.lblKontaktIme.Size = new System.Drawing.Size(45, 24);
             this.lblKontaktIme.TabIndex = 16;
             this.lblKontaktIme.Text = "Име";
             this.lblKontaktIme.Visible = false;
@@ -303,7 +291,7 @@
             this.lblKontaktPosta.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.lblKontaktPosta.Location = new System.Drawing.Point(15, 12);
             this.lblKontaktPosta.Name = "lblKontaktPosta";
-            this.lblKontaktPosta.Size = new System.Drawing.Size(93, 24);
+            this.lblKontaktPosta.Size = new System.Drawing.Size(82, 24);
             this.lblKontaktPosta.TabIndex = 15;
             this.lblKontaktPosta.Text = "е-пошта";
             this.lblKontaktPosta.Visible = false;
@@ -354,15 +342,6 @@
             this.tbKontaktIme.TabIndex = 12;
             this.tbKontaktIme.Visible = false;
             // 
-            // tbKontaktGodini
-            // 
-            this.tbKontaktGodini.Font = new System.Drawing.Font("Aero Matics", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbKontaktGodini.Location = new System.Drawing.Point(17, 163);
-            this.tbKontaktGodini.Name = "tbKontaktGodini";
-            this.tbKontaktGodini.Size = new System.Drawing.Size(266, 30);
-            this.tbKontaktGodini.TabIndex = 13;
-            this.tbKontaktGodini.Visible = false;
-            // 
             // pbDelete3
             // 
             this.pbDelete3.Image = ((System.Drawing.Image)(resources.GetObject("pbDelete3.Image")));
@@ -381,7 +360,7 @@
             this.lblInfo.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.lblInfo.Location = new System.Drawing.Point(84, 80);
             this.lblInfo.Name = "lblInfo";
-            this.lblInfo.Size = new System.Drawing.Size(219, 24);
+            this.lblInfo.Size = new System.Drawing.Size(173, 24);
             this.lblInfo.TabIndex = 19;
             this.lblInfo.Text = "Лични информации";
             this.lblInfo.Visible = false;
@@ -394,7 +373,7 @@
             this.lblPass.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.lblPass.Location = new System.Drawing.Point(430, 333);
             this.lblPass.Name = "lblPass";
-            this.lblPass.Size = new System.Drawing.Size(126, 32);
+            this.lblPass.Size = new System.Drawing.Size(106, 32);
             this.lblPass.TabIndex = 23;
             this.lblPass.Text = "Лозинка";
             // 
@@ -406,7 +385,7 @@
             this.lblPosta.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.lblPosta.Location = new System.Drawing.Point(430, 233);
             this.lblPosta.Name = "lblPosta";
-            this.lblPosta.Size = new System.Drawing.Size(121, 32);
+            this.lblPosta.Size = new System.Drawing.Size(108, 32);
             this.lblPosta.TabIndex = 22;
             this.lblPosta.Text = "е-пошта";
             // 
@@ -440,6 +419,30 @@
             this.btnNajava.UseVisualStyleBackColor = false;
             this.btnNajava.Click += new System.EventHandler(this.btnNajava_Click);
             // 
+            // btnProfil
+            // 
+            this.btnProfil.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnProfil.Font = new System.Drawing.Font("Aero Matics", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnProfil.Location = new System.Drawing.Point(158, 261);
+            this.btnProfil.Name = "btnProfil";
+            this.btnProfil.Size = new System.Drawing.Size(125, 32);
+            this.btnProfil.TabIndex = 11;
+            this.btnProfil.Text = "Профилна слика";
+            this.btnProfil.UseVisualStyleBackColor = false;
+            this.btnProfil.Click += new System.EventHandler(this.btnProfil_Click);
+            // 
+            // btnOtkazi
+            // 
+            this.btnOtkazi.Font = new System.Drawing.Font("Aero Matics", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnOtkazi.Location = new System.Drawing.Point(165, 142);
+            this.btnOtkazi.Name = "btnOtkazi";
+            this.btnOtkazi.Size = new System.Drawing.Size(118, 32);
+            this.btnOtkazi.TabIndex = 19;
+            this.btnOtkazi.Text = "Откажи";
+            this.btnOtkazi.UseVisualStyleBackColor = true;
+            this.btnOtkazi.Visible = false;
+            this.btnOtkazi.Click += new System.EventHandler(this.btnOtkazi_Click);
+            // 
             // ParentControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -457,6 +460,7 @@
             this.Controls.Add(this.tbLozinka);
             this.Controls.Add(this.lblPanel);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "ParentControl";
             this.Text = "Родителски панел";
             this.pnlInfo.ResumeLayout(false);
@@ -499,16 +503,16 @@
         private System.Windows.Forms.Panel pnlKontakti;
         private System.Windows.Forms.Label lblInfo;
         private System.Windows.Forms.Button btnDodaj;
-        private System.Windows.Forms.Label lblKontaktGodini;
         private System.Windows.Forms.Label lblKontaktIme;
         private System.Windows.Forms.Label lblKontaktPosta;
         private System.Windows.Forms.TextBox tbKontaktPosta;
         private System.Windows.Forms.TextBox tbKontaktIme;
-        private System.Windows.Forms.TextBox tbKontaktGodini;
         private System.Windows.Forms.Label lblPass;
         private System.Windows.Forms.Label lblPosta;
         private System.Windows.Forms.TextBox tbPosta;
         private System.Windows.Forms.TextBox tbLozinka;
         private System.Windows.Forms.Button btnNajava;
+        private System.Windows.Forms.Button btnProfil;
+        private System.Windows.Forms.Button btnOtkazi;
     }
 }

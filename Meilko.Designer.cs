@@ -154,7 +154,6 @@ namespace Meilko
             this.pnlCrtez.Size = new System.Drawing.Size(475, 330);
             this.pnlCrtez.TabIndex = 19;
             this.pnlCrtez.Visible = false;
-            this.pnlCrtez.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlCrtez_Paint);
             this.pnlCrtez.MouseDown += new System.Windows.Forms.MouseEventHandler(this.pnlCrtez_MouseDown);
             this.pnlCrtez.MouseMove += new System.Windows.Forms.MouseEventHandler(this.pnlCrtez_MouseMove);
             this.pnlCrtez.MouseUp += new System.Windows.Forms.MouseEventHandler(this.pnlCrtez_MouseUp);
@@ -256,7 +255,7 @@ namespace Meilko
             this.pnlSliki.AutoScroll = true;
             this.pnlSliki.Location = new System.Drawing.Point(102, 6);
             this.pnlSliki.Name = "pnlSliki";
-            this.pnlSliki.Size = new System.Drawing.Size(494, 102);
+            this.pnlSliki.Size = new System.Drawing.Size(559, 102);
             this.pnlSliki.TabIndex = 28;
             this.pnlSliki.Visible = false;
             // 
@@ -335,7 +334,7 @@ namespace Meilko
             // pbContact1
             // 
             this.pbContact1.Image = global::Meilko.Properties.Resources.text1_not_added;
-            this.pbContact1.Location = new System.Drawing.Point(602, 129);
+            this.pbContact1.Location = new System.Drawing.Point(602, 113);
             this.pbContact1.Name = "pbContact1";
             this.pbContact1.Size = new System.Drawing.Size(70, 77);
             this.pbContact1.TabIndex = 40;
@@ -346,7 +345,7 @@ namespace Meilko
             // pbContact2
             // 
             this.pbContact2.Image = global::Meilko.Properties.Resources.text2_not_added;
-            this.pbContact2.Location = new System.Drawing.Point(602, 214);
+            this.pbContact2.Location = new System.Drawing.Point(602, 198);
             this.pbContact2.Name = "pbContact2";
             this.pbContact2.Size = new System.Drawing.Size(70, 77);
             this.pbContact2.TabIndex = 41;
@@ -357,7 +356,7 @@ namespace Meilko
             // pbContact3
             // 
             this.pbContact3.Image = global::Meilko.Properties.Resources.text3_not_added;
-            this.pbContact3.Location = new System.Drawing.Point(602, 297);
+            this.pbContact3.Location = new System.Drawing.Point(602, 281);
             this.pbContact3.Name = "pbContact3";
             this.pbContact3.Size = new System.Drawing.Size(70, 77);
             this.pbContact3.TabIndex = 42;
@@ -449,7 +448,6 @@ namespace Meilko
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MinimizeBox = false;
             this.Name = "Meilko";
             this.Text = "Меилко - клиент за е-пошта за деца";
             ((System.ComponentModel.ISupportInitialize)(this.pbInbox1)).EndInit();

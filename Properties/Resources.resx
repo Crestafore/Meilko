@@ -265,9 +265,6 @@
   <data name="poraka3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\poraka3.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="posta" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\posta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="roditel_bg" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\roditel_bg.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -306,5 +303,8 @@
   </data>
   <data name="message2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\message2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="posta" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\posta.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
